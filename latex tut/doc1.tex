@@ -1,0 +1,206 @@
+\documentclass[a4paper]{article}
+%use package
+\usepackage{blindtext}
+\usepackage{color}
+\usepackage{graphicx}
+
+
+\begin{document}
+	\title{My First Document}
+	\author{Weijun Huang}
+	\date{\today} %or put date here
+	\maketitle
+	\pagenumbering{roman}
+	\tableofcontents
+\newpage
+	\pagenumbering{arabic}
+%%\newpage
+	\section{Introduction}
+	This is the introduction.
+%%\pagebreak
+	\section{method}
+		\subsection{Stage 1}
+			The first part of the methods.
+		\subsection{Stage 2}
+			The second part of the methods.	
+	\section{Results}
+		Here are my results.\\ %label%Referring to section \ref{sec1} on page \pageref{sec1}
+		\blindtext\\
+%Font Effects
+		\textit{words in italics}\\
+		\textsl{words slanted}\\
+		\textsc{words in smallcaps}\\
+		\textbf{words in bold}\\
+		\texttt{words in teletype}\\
+		\textsf{sans serif words}\\
+		\textrm{roman words}\\
+		\underline{underlined words}\\
+%Coloured Text
+		{\color{red}fire} {\color{green}fire} {\color{blue}fire} {\color{magenta}fire} {\color{yellow}		fire} {\color{white}fire}\\
+%Font Sizes
+		{\tiny tiny words}\\
+		{\scriptsize scriptsize words}\\
+		{\footnotesize footnotesize words}\\
+		{\small small words}\\
+		{\normalsize nomalsize words}\\
+		{\large large words}\\
+		{\Large Larger words}\\
+		{\LARGE LARGE words}\\
+		{\huge huge words}\\
+\newpage
+%Lists
+		\begin{enumerate}
+			\item First thing %1
+			\item Second thing %2
+				\begin{itemize}
+					\item A sub-thing %2.1
+					\item[-] Another sub-thing %2.2
+					\item[One] Another sub-thing %2.3
+					\item Another sub-thing %2.4
+				\end{itemize}
+			\item Third thing %3
+				\begin{itemize}
+					\item[-] First thing %3.1
+					\item[+] Second thing %3.2
+						\begin{itemize}
+							\item A sub-thing %3.2.1
+							\item Another sub-thing %3.2.2
+						\end{itemize}
+					\item[Q] Third thing %3.3
+				\end{itemize}
+		\end{enumerate}
+	\begin{flushleft}
+	that a single man in possession of a good fortune, must \vspace{36pt} be in want of a wife.\\
+	\end{flushleft}
+%Special Characters
+	\begin{flushright}
+		\# \$ \% \^{} \& \_ \{ \} \~{} \\
+	\end{flushright}
+	$$\sqrt{y^2}$$\\
+	Item \#1A \textbackslash 642 costs \$8 \& is sold at a \~{} 10\% profit.\\
+%Tables1
+	\begin{center}
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Week 1 & Week 2 & Week 3\\
+			\hline
+			Task 1 & Task 2 & Task 3\\
+			\hline
+			Apple & Orange & Pear\\
+			\hline
+		\end {tabular}
+	\end{center}
+%Table2
+	\begin{center}
+		\begin{tabular}{|r|c|l|}
+			\hline
+			Week 1 & Week 2 & Week 3\\
+			\hline
+			Task 1 & Task 2 & Task 3\\
+			\hline
+			Apple & Orange & Pear\\
+			\hline
+		\end {tabular}
+	\end{center}
+%Table3
+	\begin{center}
+		\begin{tabular}{c|c|c|}
+			\cline{2-3}
+			Week 1 & Week 2 & Week 3\\
+			\cline{2-3}
+			Task 1 & Task 2 & Task 3\\
+			\cline{2-3}
+			Apple & Orange & Pear\\
+			\cline{2-3}
+		\end {tabular}
+	\end{center}
+%Table4
+	\begin{tabular}{l|r|r}
+		Item & Quantity & Price (\$)\\
+		\hline
+		Nails & 500 & 0.34\\
+		Wooden boards & 100 & 4.00\\
+		Bricks & 240 & 11.50\\
+	\end{tabular}\\ \\
+%Table5
+	\begin{tabular}{l|ccc}
+		 &&Year& \\
+		 \cline{2-4}
+		 City&2006&2007&2008\\
+		 \hline
+		 Lodon&45789&46551&51298\\
+		 Berlin&34549&32543&29870\\
+		 Paris&49835&51009&51970\\
+	\end{tabular}\\
+\newpage
+%Image
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{mypic}
+		\caption{My pic}
+	\end{figure}
+%Equation
+	$1+2=3$ and this equation is $$1+2=3$$ which is common sense of math equation.\\
+	\begin{equation}
+	1+2=3
+	\end{equation}
+	\begin{eqnarray}
+		a & = & b + c \\
+		   & = & y - z
+	\end{eqnarray}
+%Math symbol
+	$n^2$\\
+	$2_a$\\
+	$b_{a-1}$\\
+	$\frac{1}{2}$\\
+	$$\frac{y}{\frac{3}{x}+b}$$\\
+	$\sqrt{y^2}$\\
+	$$\sqrt[x]{y^2}$$\\
+	$$\sum_{x=1}^5 y^z$$\\
+	$$\int_a^b f(x)$$\\
+	$\alpha$\\
+	$\beta$\\
+	$\delta$\\
+	$\Delta$\\
+	$\theta$\\
+	$\Theta$\\
+	$\mu$\\
+	$\pi$\\
+	$\Pi$\\
+	$\sigma, \Sigma$\\
+	 $\phi, \Phi$\\
+	 $\psi, \Psi$\\
+	 $\omega, \Omega$\\
+	
+	\begin{eqnarray}
+		e = m c^2
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		\pi = \frac{c}{d}
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		\frac{d}{dx}e^x = e^x
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		\frac{d}{dx}\int_0^\infty f(s)ds = f(x)
+	\end{eqnarray}
+
+	\begin{eqnarray}
+		f(x) = \sum_{i} = 0^\infty \frac{f^{(i)}(0)}{i!}x^i
+	\end{eqnarray}
+
+	\begin{eqnarray}
+		x = \sqrt[k]{\frac{x_i}{z}y}
+	\end{eqnarray}
+
+	hi this is Simon who is learninhg about Latex and doing the reference list and citation, there is a in text citation in here: \cite{Birdetal2001}.
+	
+
+\bibliographystyle{plain}
+\bibliography{doc1}
+
+
+\end{document}
